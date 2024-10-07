@@ -8,7 +8,9 @@
 
 steps:
   - checkout: self
-
+  - task: Npm@1
+    inputs:
+      command: 'install'
   # .. your instructions on building the app or preparing the repository
 
   # install & prepare snyk
